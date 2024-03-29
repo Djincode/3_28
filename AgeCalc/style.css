@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: azure;
+}
+
+.wrapper {
+    width: 40%;
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 20px;
+}
+
+.inputholder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type = "text"]{
+    width: 6rem;
+}
+
+.upside {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.downside {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upside::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    bottom: -30px;
+}
+
+.year-text, .month-text, .days-text{
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.text-holder {
+    font-size: 45px;
+}
+
+.calculation {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.calculation button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: blueviolet;
+    position: absolute;
+    border: none;
+   
+}

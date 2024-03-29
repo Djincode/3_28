@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agecalculator by Djincode</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="upside">
+            <div class="inputholder">
+                <label for="day">Day</label>
+                <input type="text" class="day" name="day">
+            </div>
+            <div class="inputholder"> 
+                <label for="month">Month</label>
+                <input type="text" class="month" name="month">
+            </div>
+            <div class="inputholder">
+                <label for="year">Year</label>
+                <input type="text" class="year" name="year">
+            </div>
+            
+        </div>
+        <div class="calculation">
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="downside">
+           <div class="year"> 
+             <span class="year-text">--</span> <span class="text-holder">years</span>
+           </div>
+            <div class="month">
+                <span class="month-text">--</span> <span class="text-holder">months</span>
+            </div>
+           <div class="day">
+            <span class="days-text">--</span>  <span class="text-holder">days</span>
+           </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
